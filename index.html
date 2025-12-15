@@ -64,3 +64,124 @@ footer{
   background:#f2f2f2;
   text-align:center;
   padding:40px 20px;
+  font-size:14px;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin-top:6px;
+  font-family:inherit;
+}
+label{font-weight:600;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Paint & Talanoa</h1>
+  <p>
+    A gentle, creative team-building experience grounded in art,
+    storytelling, and connection — designed for teams who want to
+    feel <strong>uplifted and edified</strong>.
+  </p>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Enquire about a session
+  </button>
+</header>
+
+<section>
+  <h2>What is Paint & Talanoa?</h2>
+  <p>
+    Paint & Talanoa weaves together guided painting and facilitated talanoa
+    to create space for reflection, creativity, and meaningful connection.
+    No art experience is required — just openness and presence.
+  </p>
+
+  <div class="card">
+    <strong>This experience is especially suited for:</strong>
+    <ul>
+      <li>Workplace teams & organisations</li>
+      <li>Wellbeing days and retreats</li>
+      <li>Groups seeking deeper connection and renewal</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>The Experience</h2>
+
+  <div class="card">
+    <strong>Short Session</strong>
+    <p>
+      A gentle introduction to painting and talanoa.
+      Ideal for team meetings or wellbeing check-ins.
+    </p>
+  </div>
+
+  <div class="card">
+    <strong>Standard Session</strong>
+    <p>
+      Guided creative practice, shared reflection,
+      and group conversation designed to strengthen bonds.
+    </p>
+  </div>
+
+  <div class="card">
+    <strong>Extended / Retreat Experience</strong>
+    <p>
+      A deeper, slower experience with tailored prompts,
+      space for storytelling, and intentional facilitation.
+    </p>
+  </div>
+
+  <p><em>Pricing available on enquiry.</em></p>
+</section>
+
+<section id="contact">
+  <h2>Enquire or Book</h2>
+  <p>
+    Tell us a little about your team and preferred timing.
+    We’ll be in touch to shape an experience that fits your needs.
+  </p>
+
+  <div class="card">
+    <form action="https://formspree.io/f/xbjnzvga" method="POST">
+      <label>Name
+        <input type="text" name="name" required>
+      </label><br><br>
+
+      <label>Organisation
+        <input type="text" name="organisation">
+      </label><br><br>
+
+      <label>Email
+        <input type="email" name="_replyto" required>
+      </label><br><br>
+
+      <label>Preferred date / timeframe
+        <input type="text" name="dates">
+      </label><br><br>
+
+      <label>Message
+        <textarea name="message" rows="5"></textarea>
+      </label><br><br>
+
+      <button type="submit">Send enquiry</button>
+    </form>
+
+    <p style="margin-top:20px;font-size:14px;">
+      Or email directly:
+      <strong>onemoreblock31@gmail.com</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © Paint & Talanoa — creating spaces where people feel uplifted and edified
+</footer>
+
+</body>
+</html>
