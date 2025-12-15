@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Paint & Talanoa — Creative Team Connection</title>
+<title>One More Block</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --sand:#fffaf6;
-  --clay:#e07a5f;
-  --ocean:#3d5a80;
-  --leaf:#81b29a;
-  --ink:#222;
+  --sand:#fffaf3;
+  --clay:#d96b4c;
+  --ocean:#2f5d62;
+  --leaf:#7fb685;
+  --ink:#1f1f1f;
 }
 
 body{
@@ -21,51 +21,89 @@ body{
   font-family:'Nunito',sans-serif;
   background:var(--sand);
   color:var(--ink);
-  line-height:1.6;
+  line-height:1.7;
+}
+
+/* subtle Pasifika-inspired texture */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(47,93,98,0.04),
+      rgba(47,93,98,0.04) 1px,
+      transparent 1px,
+      transparent 12px
+    );
+  pointer-events:none;
+  z-index:-1;
 }
 
 header{
-  padding:80px 20px;
+  padding:90px 20px;
   text-align:center;
-  background:linear-gradient(180deg,#ffe9e2,#fffaf6);
+  background:linear-gradient(180deg,#ffe5db,var(--sand));
 }
 
-h1{font-size:44px;margin-bottom:10px;}
-h2{margin-top:60px;color:var(--ocean);}
-p{max-width:720px;margin:0 auto 20px;}
+h1{
+  font-size:48px;
+  margin-bottom:10px;
+  letter-spacing:1px;
+}
+
+.subline{
+  font-weight:600;
+  font-size:18px;
+  color:var(--ocean);
+  margin-bottom:30px;
+}
+
+p{
+  max-width:760px;
+  margin:0 auto 20px;
+}
 
 button{
   background:var(--clay);
   color:#fff;
   border:none;
-  padding:14px 26px;
-  border-radius:12px;
-  font-weight:700;
+  padding:15px 30px;
+  border-radius:14px;
+  font-weight:800;
   cursor:pointer;
 }
 
 section{
-  max-width:960px;
+  max-width:980px;
   margin:0 auto;
-  padding:40px 20px;
+  padding:60px 20px;
+}
+
+h2{
+  color:var(--ocean);
+  margin-bottom:20px;
 }
 
 .card{
   background:#fff;
-  border-radius:16px;
-  padding:28px;
-  margin:24px 0;
-  box-shadow:0 8px 22px rgba(0,0,0,.06);
+  border-radius:18px;
+  padding:32px;
+  margin:28px 0;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
 }
 
 ul{padding-left:20px;}
 
 footer{
-  background:#f2f2f2;
+  background:#f1f1f1;
   text-align:center;
-  padding:40px 20px;
+  padding:50px 20px;
   font-size:14px;
+  color:#555;
 }
+
 input,textarea{
   width:100%;
   padding:12px;
@@ -74,6 +112,7 @@ input,textarea{
   margin-top:6px;
   font-family:inherit;
 }
+
 label{font-weight:600;}
 </style>
 </head>
@@ -81,107 +120,39 @@ label{font-weight:600;}
 <body>
 
 <header>
-  <h1>Paint & Talanoa</h1>
+  <h1>One More Block</h1>
+  <div class="subline">Saving a soul, one block at a time</div>
+
   <p>
-    A gentle, creative team-building experience grounded in art,
-    storytelling, and connection — designed for teams who want to
-    feel <strong>uplifted and edified</strong>.
+    One More Block is a values-led Pasifika initiative centred on
+    healing, belonging, and determination — empowering individuals
+    so families and communities can thrive together.
   </p>
-  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-    Enquire about a session
+
+  <button onclick="document.getElementById('offerings').scrollIntoView({behavior:'smooth'})">
+    Explore the kaupapa
   </button>
 </header>
 
 <section>
-  <h2>What is Paint & Talanoa?</h2>
+  <h2>The kaupapa</h2>
   <p>
-    Paint & Talanoa weaves together guided painting and facilitated talanoa
-    to create space for reflection, creativity, and meaningful connection.
-    No art experience is required — just openness and presence.
+    Rooted in lived experience and legacy, One More Block creates
+    culturally grounded spaces where people are seen, strengthened,
+    and supported — one step, one conversation, one block at a time.
   </p>
-
-  <div class="card">
-    <strong>This experience is especially suited for:</strong>
-    <ul>
-      <li>Workplace teams & organisations</li>
-      <li>Wellbeing days and retreats</li>
-      <li>Groups seeking deeper connection and renewal</li>
-    </ul>
-  </div>
 </section>
 
-<section>
-  <h2>The Experience</h2>
+<section id="offerings">
+  <h2>Our offerings</h2>
 
   <div class="card">
-    <strong>Short Session</strong>
+    <h3>Paint & Talanoa</h3>
     <p>
-      A gentle introduction to painting and talanoa.
-      Ideal for team meetings or wellbeing check-ins.
+      A creative, reflective experience blending guided painting
+      with talanoa — fostering connection, storytelling, and healing.
+      No art experience required.
     </p>
   </div>
 
-  <div class="card">
-    <strong>Standard Session</strong>
-    <p>
-      Guided creative practice, shared reflection,
-      and group conversation designed to strengthen bonds.
-    </p>
-  </div>
-
-  <div class="card">
-    <strong>Extended / Retreat Experience</strong>
-    <p>
-      A deeper, slower experience with tailored prompts,
-      space for storytelling, and intentional facilitation.
-    </p>
-  </div>
-
-  <p><em>Pricing available on enquiry.</em></p>
-</section>
-
-<section id="contact">
-  <h2>Enquire or Book</h2>
-  <p>
-    Tell us a little about your team and preferred timing.
-    We’ll be in touch to shape an experience that fits your needs.
-  </p>
-
-  <div class="card">
-    <form action="https://formspree.io/f/xbjnzvga" method="POST">
-      <label>Name
-        <input type="text" name="name" required>
-      </label><br><br>
-
-      <label>Organisation
-        <input type="text" name="organisation">
-      </label><br><br>
-
-      <label>Email
-        <input type="email" name="_replyto" required>
-      </label><br><br>
-
-      <label>Preferred date / timeframe
-        <input type="text" name="dates">
-      </label><br><br>
-
-      <label>Message
-        <textarea name="message" rows="5"></textarea>
-      </label><br><br>
-
-      <button type="submit">Send enquiry</button>
-    </form>
-
-    <p style="margin-top:20px;font-size:14px;">
-      Or email directly:
-      <strong>onemoreblock31@gmail.com</strong>
-    </p>
-  </div>
-</section>
-
-<footer>
-  © Paint & Talanoa — creating spaces where people feel uplifted and edified
-</footer>
-
-</body>
-</html>
+  <div class="c
