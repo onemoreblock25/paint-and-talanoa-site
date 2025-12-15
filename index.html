@@ -4,31 +4,106 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Paint & Talanoa — Team Building</title>
-<meta name="description" content="Paint & Talanoa — creative Pasifika team-building experiences blending art, talanoa, and reflection." />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --bg:#fff9f2;
-    --card:#ffffff;
-    --accent:#ff6f61;
-    --muted:#6b6b6b;
-    --maxw:1100px;
-    --radius:12px;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);
-    color:#222;line-height:1.45;
-  }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:28px;}
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #fffaf6;
+  color: #222;
+}
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: #ffe9e2;
+}
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+h1 { font-size: 42px; margin-bottom: 10px; }
+h2 { margin-top: 40px; }
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f4f4f4;
+  font-size: 14px;
+}
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
 </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Paint & Talanoa — Full Website</h1>
-    <p>This is your full website version ready for Netlify. All sections are included.</p>
+
+<header>
+  <h1>Paint & Talanoa</h1>
+  <p>Creative Pasifika team-building experiences</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Book a Session</button>
+</header>
+
+<section>
+  <h2>What is Paint & Talanoa?</h2>
+  <p>
+    Paint & Talanoa blends gentle painting prompts with guided talanoa —
+    creating space for teams to connect, reflect, and slow down together.
+    No art experience needed.
+  </p>
+
+  <div class="card">
+    <strong>Perfect for:</strong>
+    <ul>
+      <li>Team retreats</li>
+      <li>Wellbeing days</li>
+      <li>Culture & connection sessions</li>
+    </ul>
   </div>
+</section>
+
+<section>
+  <h2>Packages</h2>
+
+  <div class="card">
+    <strong>Mini Session — 60 mins</strong>
+    <p>Intro painting + short talanoa</p>
+  </div>
+
+  <div class="card">
+    <strong>Standard Session — 90 mins</strong>
+    <p>Guided painting, reflection, group sharing</p>
+  </div>
+
+  <div class="card">
+    <strong>Half-Day Retreat</strong>
+    <p>Custom facilitation & deeper team connection</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Book a Session</h2>
+  <p>Email: <strong>hello@paintandtalanoa.nz</strong></p>
+</section>
+
+<footer>
+  © Paint & Talanoa — Creating connection through creativity
+</footer>
+
 </body>
 </html>
